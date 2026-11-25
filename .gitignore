@@ -1,0 +1,10 @@
+node_modules
+dist
+.vercel
+*.zip
+life at bask
+scratch_chrome
+scratch_*
+preview*.png
+final*.png
+edge_dom.html

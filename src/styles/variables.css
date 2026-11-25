@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Baskk - Awwwards Design System Variables
+   ========================================================================== */
+
+:root {
+  /* Warm Neutral Palette */
+  --color-ivory: #FDFBF7;
+  --color-cream: #F5F0E6;
+  --color-sand: #E6DDD0;
+  --color-sand-light: #EFE7DA;
+  --color-espresso: #1A1816;
+  --color-espresso-light: #2A2724;
+  --color-terracotta: #A84E32;
+  --color-terracotta-soft: #D97E63;
+  --color-gold: #C5A059;
+  --color-burgundy: #7A1C2C;
+  --color-muted: #78716C;
+  --color-muted-light: #A8A29E;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  /* Easing Functions (GSAP Easing Sync) */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+  /* Spacing */
+  --header-height: 90px;
+  --container-max: 1400px;
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-pill: 100px;
+}

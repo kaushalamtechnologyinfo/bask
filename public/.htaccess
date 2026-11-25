@@ -1,0 +1,22 @@
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm|pdf)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Route API endpoints to GoDaddy cPanel PHP handlers
+  RewriteRule ^api/booking-enquiry/?$ /api/booking-enquiry.php [L,QSA]
+  RewriteRule ^api/gift-voucher/?$ /api/gift-voucher.php [L,QSA]
+
+  # React SPA Routing Fallback
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
